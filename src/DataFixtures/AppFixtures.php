@@ -75,7 +75,7 @@ class AppFixtures extends Fixture
 
          for ($i = 0; $i < 100; $i++) {
             $note = new Note();
-            $note->setTitle($faker->userName())
+            $note->setTitle($faker->sentence(2))
                 ->setContent($faker->sentence(10))
                 ->setCategory($objectCategory[rand(0, 4)])
                 ->setUser($objectUser[rand(0, 99)])
